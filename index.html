@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071221">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://script.google.com https://*.googleusercontent.com; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>IntellEMS™ | Statewide Elections Management — Intellisoft Technologies</title>
+<meta name="description" content="IntellEMS — election administration and operations platform for state agencies, counties and their vendors.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+html,body{margin:0;height:100%;background:#071221;color:#9eb2c9;font:14px system-ui,-apple-system,'Segoe UI',sans-serif}
+iframe{position:fixed;inset:0;width:100%;height:100%;border:0;display:block;background:#071221}
+#wait{position:fixed;inset:0;display:grid;place-content:center;justify-items:center;gap:10px;text-align:center}
+.m{width:38px;height:38px;border:2px solid #4de0c3;border-radius:10px;display:grid;place-items:center;color:#4de0c3;font-weight:800}
+a{color:#4de0c3}
+</style>
+</head>
+<body>
+<div id="wait"><div class="m">E</div><div>Opening IntellEMS…</div><noscript>IntellEMS needs JavaScript.</noscript></div>
+<iframe id="app" title="IntellEMS" src="https://script.google.com/macros/s/AKfycbxiY8iQySzJh9bLKRVchYJAvHTykJ9pAZV8RAyVVCYS4kPR5755ZN5mUSScU7bvUrf3wA/exec" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<script>
+var f = document.getElementById('app');
+f.addEventListener('load', function () { document.getElementById('wait').style.display = 'none'; });
+setTimeout(function () { var w = document.getElementById('wait'); if (w.style.display !== 'none') w.lastElementChild.insertAdjacentHTML('afterend', '<div>Taking longer than usual. <a href="">Reload</a> or contact <a href="mailto:sales@intellisoft-tech.com">sales@intellisoft-tech.com</a>.</div>'); }, 20000);
+</script>
+</body>
+</html>
